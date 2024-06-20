@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Container, Box, VStack, HStack, Text, Button, Input, Textarea, IconButton, Image } from "@chakra-ui/react";
-import { FaThumbsUp, FaThumbsDown, FaComment, FaStore } from "react-icons/fa";
+import { FaThumbsUp, FaThumbsDown, FaComment, FaStore, FaStar } from "react-icons/fa";
 
-const Product = ({ product, onLike, onDislike, onComment }) => {
+const Product = ({ product, onLike, onDislike, onComment, onRate }) => {
   const [comment, setComment] = useState("");
 
   return (
